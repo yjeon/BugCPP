@@ -14,7 +14,7 @@ Graphics::Graphics(const char fname[], const int bugSelection) {
     m_simulator.ReadObstacles(fname);
     m_bugAlgorithms = new BugAlgorithms(&m_simulator);
 
-    m_setRobotAndGoalCenters = 0;    
+    m_setRobotAndGoalCenters = 0;
     m_bugSelection           = bugSelection;
 	m_frames 			   	 = 0;
     m_exportFrames 			 = 0;
@@ -27,33 +27,33 @@ Graphics::~Graphics(void) {
 }
 
 // The `Main` Loop
-void Graphics::MainLoop(void) {	
+void Graphics::MainLoop(void) {
     m_graphics = this; // The Global graphics object becomes this
 
     //create window
-    static int    argc = 1;	
+    static int    argc = 1;
     static char  *args = (char*)"args";
-    glutInit(&argc, &args);    
-    glutInitDisplayMode(GLUT_RGBA | GLUT_DEPTH | GLUT_DOUBLE);    
-    glutInitWindowSize(600, 400);
-    glutInitWindowPosition(0, 0); 
-    glutCreateWindow("Bug Algorithms");	   	
+    glutInit(&argc, &args);
+    glutInitDisplayMode(GLUT_RGBA | GLUT_DEPTH | GLUT_DOUBLE);
+    glutInitWindowSize(1024, 1024);
+    glutInitWindowPosition(0, 0);
+    glutCreateWindow("Bug Algorithms");
 
     //register callback functions
     glutDisplayFunc(CallbackEventOnDisplay);
     glutMouseFunc(CallbackEventOnMouse);
     glutIdleFunc(NULL);
-    glutTimerFunc(0, CallbackEventOnTimer, 0); 
+    glutTimerFunc(0, CallbackEventOnTimer, 0);
     glutKeyboardFunc(CallbackEventOnKeyPress);
 
     //enter main event loop
-    glutMainLoop();	
+    glutMainLoop();
 	fgetc(stdin);
 }
 
-void Graphics::HandleEventOnTimer(void) {	
+void Graphics::HandleEventOnTimer(void) {
     if(m_setRobotAndGoalCenters == 2) {
-		Move   move;    
+		Move   move;
 		Sensor sensor = m_simulator.TakeSensorReading();
 		if(!m_simulator.HasRobotReachedGoal()) {
 			if(m_bugSelection == 0)         move = m_bugAlgorithms->Bug0(sensor);
@@ -61,28 +61,28 @@ void Graphics::HandleEventOnTimer(void) {
 			else if(m_bugSelection == 2)    move = m_bugAlgorithms->Bug2(sensor);
 
 			m_simulator.SetRobotCenter(m_simulator.GetRobotCenterX() + move.m_dx, m_simulator.GetRobotCenterY() + move.m_dy);
-			
+
 			if(m_exportFrames)              ExportFrameAsImage();
 		}
     }
-    
-} 
+
+}
 
 void Graphics::HandleEventOnMouseLeftBtnDown(const double mousePosX, const double mousePosY) {
     if(m_setRobotAndGoalCenters == 0) {
 		m_simulator.SetRobotCenter(mousePosX, mousePosY);
 		m_simulator.m_robotInitX = mousePosX;
-		m_simulator.m_robotInitY = mousePosY;	
-		m_setRobotAndGoalCenters = 1;	
+		m_simulator.m_robotInitY = mousePosY;
+		m_setRobotAndGoalCenters = 1;
     } else if(m_setRobotAndGoalCenters == 1) {
 		m_simulator.SetGoalCenter(mousePosX, mousePosY);
-		m_setRobotAndGoalCenters = 2;	
+		m_setRobotAndGoalCenters = 2;
     }
 }
 
 void Graphics::HandleEventOnKeyPress(const int key) {
     printf("pressed key = %d\n", key);
-    
+
     switch(key) {
 		case 27: //escape key
 		    exit(0);
@@ -115,24 +115,24 @@ void Graphics::HandleEventOnDisplay(void) {
         glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
         DrawCircle2D(m_simulator.GetGoalCenterX(), m_simulator.GetGoalCenterY(), 0.6);
     }
-    
+
     //draw trajectory
     glColor3f(0, 0, 1);
     glLineWidth(3.0);
     glBegin(GL_LINE_STRIP);
     for(int i = 0; i < (int) m_simulator.m_path.size(); i += 2)
 	glVertex2dv(&m_simulator.m_path[i]);
-    glEnd();	
-    glLineWidth(1.0);	
+    glEnd();
+    glLineWidth(1.0);
 
     //draw obstacles
     glColor3f(0.45, 0.34, 0.76);
-    glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);	
+    glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
     glBegin(GL_TRIANGLES);
     for(int i = 0; i < (int) m_simulator.m_obstacles.size(); ++i) {
         Simulator::Obstacle *obst = m_simulator.m_obstacles[i];
         const int            ntri = obst->m_triangles.size();
-    
+
         for(int j = 0; j < ntri; j += 3) {
             glVertex2dv(&obst->m_vertices[2 * obst->m_triangles[j + 0]]);
             glVertex2dv(&obst->m_vertices[2 * obst->m_triangles[j + 1]]);
@@ -154,17 +154,17 @@ void Graphics::HandleEventOnDisplay(void) {
         DrawCircle2D(m_bugAlgorithms->m_hit[0], m_bugAlgorithms->m_hit[1], 0.5);
     }
 
-    
+
 }
 
 void Graphics::DrawCircle2D(const double cx, const double cy, const double r) {
-    const int    nsides = 50;    
+    const int    nsides = 50;
     const double angle  = 2 * M_PI / nsides;
-    
+
     glBegin(GL_POLYGON);
     for(int i = 0; i <= nsides; i++)
         glVertex2d(cx + r * cos(i * angle), cy + r * sin(i * angle));
-    glEnd();	
+    glEnd();
 }
 
 
@@ -172,21 +172,21 @@ void Graphics::CallbackEventOnDisplay(void) {
     if(m_graphics) {
 		glClearColor(1.0f, 1.0f, 1.0f, 0.0f);
 		glClearDepth(1.0);
-		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);    
+		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 		glEnable(GL_DEPTH_TEST);
-		glShadeModel(GL_SMOOTH);	
-		
+		glShadeModel(GL_SMOOTH);
+
 		glViewport(0, 0, glutGet(GLUT_WINDOW_WIDTH), glutGet(GLUT_WINDOW_HEIGHT));
-		
+
 		glMatrixMode(GL_PROJECTION);
 		glLoadIdentity();
 		glOrtho(-22, 22, -14, 14, -1.0, 1.0);
 		glMatrixMode(GL_MODELVIEW);
-		glLoadIdentity();	    
-		
+		glLoadIdentity();
+
 		m_graphics->HandleEventOnDisplay();
-		
-		glutSwapBuffers();	    
+
+		glutSwapBuffers();
     }
 }
 
@@ -196,20 +196,20 @@ void Graphics::CallbackEventOnMouse(int button, int state, int x, int y) {
 		MousePosition(x, y, &mouseX, &mouseY);
 		m_graphics->HandleEventOnMouseLeftBtnDown(mouseX , mouseY);
 		glutPostRedisplay();
-    }	    
+    }
 }
 
 void Graphics::CallbackEventOnTimer(int id)  {
     if(m_graphics) {
 		m_graphics->HandleEventOnTimer();
 		glutTimerFunc(1, CallbackEventOnTimer, id);
-		glutPostRedisplay();	    
+		glutPostRedisplay();
     }
 }
 
 void Graphics::CallbackEventOnKeyPress(unsigned char key, int x, int y) {
     if(m_graphics) {
-		m_graphics->HandleEventOnKeyPress(key);	
+		m_graphics->HandleEventOnKeyPress(key);
 	}
 }
 
@@ -220,39 +220,39 @@ void Graphics::MousePosition(const int x, const int y, double *posX, double *pos
     GLdouble projection[16];
     GLfloat winX, winY, winZ;
     GLdouble posZ;
-    
+
     glGetDoublev( GL_MODELVIEW_MATRIX, modelview );
     glGetDoublev( GL_PROJECTION_MATRIX, projection );
     glGetIntegerv( GL_VIEWPORT, viewport );
-    
+
     winX = (float)x;
     winY = (float)viewport[3] - (float)y;
     glReadPixels( x, int(winY), 1, 1, GL_DEPTH_COMPONENT, GL_FLOAT, &winZ );
-    
+
     gluUnProject(winX, winY, winZ, modelview, projection, viewport, posX, posY, &posZ);
 }
 
 void Graphics::ExportFrameAsImage(void) {
     char fname[50];
-    sprintf(fname, "frames_%05d.ppm", m_frames++);		    
+    sprintf(fname, "frames_%05d.ppm", m_frames++);
     ExportFrameAsImage(fname);
 }
 
 void Graphics::ExportFrameAsImage(const char fname[]) {
-    
+
     const int width = glutGet(GLUT_WINDOW_WIDTH);
     const int height= glutGet(GLUT_WINDOW_HEIGHT);
-    
+
     char *temp  = new char[3 * width * height];
     char *image = new char[3 * width * height];
-    
+
     FILE *fp = fopen(fname, "w");
-    
+
     printf("Writing %s\n", fname);
-    
+
     glPixelStorei(GL_PACK_ALIGNMENT, 1);
     glReadPixels(0, 0, width, height, GL_RGB, GL_UNSIGNED_BYTE, temp);
-    
+
     int  a, b, row_sz = 3*width;
     // Reverse rows
     for(int i=0; i < height; i+=1) {
@@ -267,7 +267,7 @@ void Graphics::ExportFrameAsImage(const char fname[]) {
     fprintf(fp, "P6\n");
     fprintf(fp, "%i %i\n 255\n", width, height);
     fwrite(image, sizeof(char), 3 * width * height, fp);
-    fclose(fp);	    
+    fclose(fp);
     delete[] temp;
     delete[] image;
 }
@@ -278,14 +278,14 @@ void Graphics::ExportFrameAsImage(const char fname[]) {
 // Creates a new Graphics with argc, argc.
 int main(int argc, char **argv) {
     if(argc < 3) {
-		printf("missing obstacle file argument\n");		
+		printf("missing obstacle file argument\n");
 		printf("  RunBug <obstacle_file.txt> <bugSelection>\n");
-		return 0;		
+		return 0;
     }
 
     Graphics graphics(argv[1], atoi(argv[2]));
     graphics.HandleEventOnHelp(); // Simple printf();
     graphics.MainLoop();		  // Actual Loop
 
-    return 0;    
+    return 0;
 }

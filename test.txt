@@ -1,83 +1,172 @@
 Help: left-click to desired place to set up the value for robot center and goal center
-Help: left-click to desired place to set up the value for robot center and goal center
-Help: left-click to desired place to set up the value for robot center and goal center
-pressed key = 109
-pressed key = 97
-pressed key = 107
-Help: left-click to desired place to set up the value for robot center and goal center
-distO = +70.477642	
-distO = +0.000000	
-distO = +1.662919	
-distO = +112.579324	
-distO = +465.189098	
-distO = +1059.798871	
-distO = +1896.408645	
-distO = +2975.018419	
-distO = +4295.628192	
-distO = +5858.237966	
-distO = +7662.847739	
-distO = +9709.457513	
-distO = +11998.067287	
-distO = +14528.677060	
-distO = +17301.286834	
-distO = +20315.896607	
-distO = +23572.506381	
-distO = +27071.116154	
-distO = +30811.725928	
-distO = +34794.335702	
-distO = +39018.945475	
-distO = +43485.555249	
-distO = +48194.165022	
-distO = +53144.774796	
-distO = +58337.384570	
-distO = +63771.994343	
-distO = +69448.604117	
-distO = +75367.213890	
-distO = +81527.823664	
-distO = +87930.433438	
-distO = +94575.043211	
-distO = +101461.652985	
-distO = +108590.262758	
-distO = +115960.872532	
-distO = +123573.482305	
-distO = +131428.092079	
-distO = +139524.701853	
-distO = +147863.311626	
-distO = +156443.921400	
-distO = +165266.531173	
-distO = +174331.140947	
-distO = +183637.750721	
-distO = +193186.360494	
-distO = +202976.970268	
-distO = +213009.580041	
-distO = +223284.189815	
-distO = +233800.799588	
-distO = +244559.409362	
-distO = +255560.019136	
-distO = +266802.628909	
-distO = +278287.238683	
-distO = +290013.848456	
-distO = +301982.458230	
-distO = +314193.068004	
-distO = +326645.677777	
-distO = +339340.287551	
-distO = +352276.897324	
-distO = +365455.507098	
-distO = +378876.116872	
-distO = +392538.726645	
-distO = +406443.336419	
-distO = +420589.946192	
-distO = +434978.555966	
-distO = +449609.165739	
-distO = +464481.775513	
-distO = +479596.385287	
-distO = +494952.995060	
-distO = +510551.604834	
-distO = +526392.214607	
-distO = +542474.824381	
-distO = +558799.434155	
-distO = +575366.043928	
-distO = +592174.653702	
-distO = +609225.263475	
-distO = +626517.873249	
-distO = +644052.483022	
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.050702	 move.m_dy = -0.032083
+move.m_dx = +0.032083	 move.m_dy = +0.050702
+move.m_dx = +0.050540	 move.m_dy = -0.032337
+move.m_dx = +0.032337	 move.m_dy = +0.050540
+move.m_dx = +0.032591	 move.m_dy = +0.050377
+move.m_dx = +0.050212	 move.m_dy = -0.032845
+move.m_dx = +0.032845	 move.m_dy = +0.050212
+move.m_dx = +0.050045	 move.m_dy = -0.033099
+move.m_dx = +0.033099	 move.m_dy = +0.050045
+move.m_dx = +0.033353	 move.m_dy = +0.049876
+move.m_dx = +0.033606	 move.m_dy = +0.049705
+move.m_dx = +0.033859	 move.m_dy = +0.049533
+move.m_dx = +0.034111	 move.m_dy = +0.049361
+move.m_dx = +0.049186	 move.m_dy = -0.034361
+move.m_dx = +0.034361	 move.m_dy = +0.049186
+move.m_dx = +0.034613	 move.m_dy = +0.049010
+move.m_dx = +0.034863	 move.m_dy = +0.048832
+move.m_dx = +0.035112	 move.m_dy = +0.048653
+move.m_dx = +0.035361	 move.m_dy = +0.048473
+move.m_dx = +0.035608	 move.m_dy = +0.048291
+move.m_dx = +0.035855	 move.m_dy = +0.048109
+move.m_dx = +0.047925	 move.m_dy = -0.036100
+move.m_dx = +0.036100	 move.m_dy = +0.047925
+move.m_dx = +0.036346	 move.m_dy = +0.047738
+move.m_dx = +0.036591	 move.m_dy = +0.047551
+move.m_dx = +0.036835	 move.m_dy = +0.047362
+move.m_dx = +0.037078	 move.m_dy = +0.047172
+move.m_dx = +0.037320	 move.m_dy = +0.046981
+move.m_dx = +0.037561	 move.m_dy = +0.046788
+move.m_dx = +0.037801	 move.m_dy = +0.046595
+move.m_dx = +0.038040	 move.m_dy = +0.046400
+move.m_dx = +0.038278	 move.m_dy = +0.046203
+move.m_dx = +0.038515	 move.m_dy = +0.046006
+move.m_dx = +0.038751	 move.m_dy = +0.045807
+move.m_dx = +0.045608	 move.m_dy = -0.038986
+move.m_dx = +0.038986	 move.m_dy = +0.045608
+move.m_dx = +0.039222	 move.m_dy = +0.045406
+move.m_dx = +0.039456	 move.m_dy = +0.045202
+move.m_dx = +0.039689	 move.m_dy = +0.044998
+move.m_dx = +0.039921	 move.m_dy = +0.044792
+move.m_dx = +0.040152	 move.m_dy = +0.044585
+move.m_dx = +0.040381	 move.m_dy = +0.044377
+move.m_dx = +0.040610	 move.m_dy = +0.044168
+move.m_dx = +0.040838	 move.m_dy = +0.043958
+move.m_dx = +0.041064	 move.m_dy = +0.043746
+move.m_dx = +0.041290	 move.m_dy = +0.043533
+move.m_dx = +0.041514	 move.m_dy = +0.043319
+move.m_dx = +0.041737	 move.m_dy = +0.043104
+move.m_dx = +0.041960	 move.m_dy = +0.042888
+move.m_dx = +0.042181	 move.m_dy = +0.042671
+move.m_dx = +0.042401	 move.m_dy = +0.042452
+move.m_dx = +0.042619	 move.m_dy = +0.042233
+move.m_dx = +0.042837	 move.m_dy = +0.042012
+move.m_dx = +0.043053	 move.m_dy = +0.041790
+move.m_dx = +0.043269	 move.m_dy = +0.041567
+move.m_dx = +0.043483	 move.m_dy = +0.041343
+move.m_dx = +0.043696	 move.m_dy = +0.041118
+move.m_dx = +0.043908	 move.m_dy = +0.040892
+move.m_dx = +0.044118	 move.m_dy = +0.040664
+move.m_dx = +0.044328	 move.m_dy = +0.040436
+move.m_dx = +0.044536	 move.m_dy = +0.040206
+move.m_dx = +0.044743	 move.m_dy = +0.039976
+move.m_dx = +0.044949	 move.m_dy = +0.039744
+move.m_dx = +0.045154	 move.m_dy = +0.039511
+move.m_dx = +0.045357	 move.m_dy = +0.039278
+move.m_dx = +0.045559	 move.m_dy = +0.039043
+move.m_dx = +0.045760	 move.m_dy = +0.038807
+move.m_dx = +0.045960	 move.m_dy = +0.038570
+move.m_dx = +0.046159	 move.m_dy = +0.038332
+move.m_dx = +0.046356	 move.m_dy = +0.038093
+move.m_dx = +0.046552	 move.m_dy = +0.037853
+move.m_dx = +0.046747	 move.m_dy = +0.037612
+move.m_dx = +0.046941	 move.m_dy = +0.037370
+move.m_dx = +0.047133	 move.m_dy = +0.037127
+move.m_dx = +0.047324	 move.m_dy = +0.036884
+move.m_dx = +0.047514	 move.m_dy = +0.036639
+move.m_dx = +0.047703	 move.m_dy = +0.036393
+move.m_dx = +0.047890	 move.m_dy = +0.036146
+move.m_dx = +0.048076	 move.m_dy = +0.035898
+move.m_dx = +0.048261	 move.m_dy = +0.035649
+move.m_dx = +0.048444	 move.m_dy = +0.035400
+move.m_dx = +0.048627	 move.m_dy = +0.035149
+move.m_dx = +0.048807	 move.m_dy = +0.034897
+move.m_dx = +0.048987	 move.m_dy = +0.034645
+move.m_dx = +0.049165	 move.m_dy = +0.034392
+move.m_dx = +0.049342	 move.m_dy = +0.034137
+move.m_dx = +0.049518	 move.m_dy = +0.033882
+move.m_dx = +0.049692	 move.m_dy = +0.033626
+move.m_dx = +0.049865	 move.m_dy = +0.033369
+move.m_dx = +0.050037	 move.m_dy = +0.033111
+move.m_dx = +0.050207	 move.m_dy = +0.032852
+move.m_dx = +0.050376	 move.m_dy = +0.032592
+move.m_dx = +0.050544	 move.m_dy = +0.032332
+move.m_dx = +0.050710	 move.m_dy = +0.032070
+move.m_dx = +0.050875	 move.m_dy = +0.031808
+move.m_dx = +0.051038	 move.m_dy = +0.031545
+move.m_dx = +0.051200	 move.m_dy = +0.031281
+move.m_dx = +0.051361	 move.m_dy = +0.031016
+move.m_dx = +0.051521	 move.m_dy = +0.030751
+move.m_dx = +0.051679	 move.m_dy = +0.030484
+move.m_dx = +0.051836	 move.m_dy = +0.030217
+move.m_dx = +0.051991	 move.m_dy = +0.029949
+move.m_dx = +0.052145	 move.m_dy = +0.029680
+move.m_dx = +0.052297	 move.m_dy = +0.029411
+move.m_dx = +0.052448	 move.m_dy = +0.029140
+move.m_dx = +0.052598	 move.m_dy = +0.028869
+move.m_dx = +0.052747	 move.m_dy = +0.028597
+move.m_dx = +0.052893	 move.m_dy = +0.028325
+move.m_dx = +0.053039	 move.m_dy = +0.028051
+move.m_dx = +0.053183	 move.m_dy = +0.027777
+move.m_dx = +0.053326	 move.m_dy = +0.027502
+move.m_dx = +0.053467	 move.m_dy = +0.027226
+move.m_dx = +0.053607	 move.m_dy = +0.026950
+move.m_dx = +0.053745	 move.m_dy = +0.026673

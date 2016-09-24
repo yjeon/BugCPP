@@ -111,11 +111,12 @@ protected:
      */
     int m_bugSelection;
 
-  void ExportFrameAsImage(void);
+    void ExportFrameAsImage(void);
     void ExportFrameAsImage(const char fname[]);
  
-        int  m_frames;
+    int  m_frames;
     bool m_exportFrames;
+    bool paused;
 
     
 };
